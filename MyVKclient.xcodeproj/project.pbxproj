@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		941EAFE326886F2200B8BC8A /* UniversalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941EAFE126886F2200B8BC8A /* UniversalTableViewCell.swift */; };
+		941EAFE426886F2200B8BC8A /* UniversalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 941EAFE226886F2200B8BC8A /* UniversalTableViewCell.xib */; };
+		941EAFE92688E05300B8BC8A /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941EAFE82688E05300B8BC8A /* Group.swift */; };
+		941EAFEB2688E1BD00B8BC8A /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941EAFEA2688E1BD00B8BC8A /* MyTabBarController.swift */; };
+		941EAFEF268904C000B8BC8A /* FotoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941EAFEE268904C000B8BC8A /* FotoController.swift */; };
+		941EAFF22689053B00B8BC8A /* FotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941EAFF02689053B00B8BC8A /* FotoCell.swift */; };
+		941EAFF32689053B00B8BC8A /* FotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 941EAFF12689053B00B8BC8A /* FotoCell.xib */; };
+		941EAFF52689193400B8BC8A /* AllGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941EAFF42689193400B8BC8A /* AllGroupViewController.swift */; };
+		941EAFF7268921BF00B8BC8A /* MyGroupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941EAFF6268921BF00B8BC8A /* MyGroupController.swift */; };
+		941EB0072692079C00B8BC8A /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941EB0062692079C00B8BC8A /* News.swift */; };
+		941EB00B2694CD0D00B8BC8A /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941EB00A2694CD0D00B8BC8A /* NewsViewController.swift */; };
+		941EB01326A1EF6400B8BC8A /* FullSizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941EB01226A1EF6400B8BC8A /* FullSizeViewController.swift */; };
+		941EB01626A1F22000B8BC8A /* FullSizeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941EB01426A1F22000B8BC8A /* FullSizeCollectionViewCell.swift */; };
+		941EB01726A1F22000B8BC8A /* FullSizeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 941EB01526A1F22000B8BC8A /* FullSizeCollectionViewCell.xib */; };
+		941EB01F26B9B30D00B8BC8A /* session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941EB01E26B9B30D00B8BC8A /* session.swift */; };
+		941EB02126B9B86900B8BC8A /* MyProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941EB02026B9B86900B8BC8A /* MyProfileController.swift */; };
+		941EB02626BB16DC00B8BC8A /* MyFotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941EB02426BB16DC00B8BC8A /* MyFotoCollectionViewCell.swift */; };
+		941EB02726BB16DC00B8BC8A /* MyFotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 941EB02526BB16DC00B8BC8A /* MyFotoCollectionViewCell.xib */; };
+		94206B1A26F39EF70084E2BF /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 94206B1926F39EF70084E2BF /* RealmSwift */; };
+		94206B2126F4853A0084E2BF /* TextNewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94206B1F26F485390084E2BF /* TextNewsCell.swift */; };
+		94206B2226F4853A0084E2BF /* TextNewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94206B2026F485390084E2BF /* TextNewsCell.xib */; };
+		94206B2526F4858F0084E2BF /* ImageNewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94206B2326F4858F0084E2BF /* ImageNewsCell.swift */; };
+		94206B2626F4858F0084E2BF /* ImageNewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94206B2426F4858F0084E2BF /* ImageNewsCell.xib */; };
+		94206B2926F485B30084E2BF /* InfoNewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94206B2726F485B30084E2BF /* InfoNewsCell.swift */; };
+		94206B2A26F485B30084E2BF /* InfoNewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94206B2826F485B30084E2BF /* InfoNewsCell.xib */; };
+		948A456226C9578F00CE3E4B /* RealmFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948A456126C9578F00CE3E4B /* RealmFriend.swift */; };
+		948A456426C977DA00CE3E4B /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948A456326C977DA00CE3E4B /* Friend.swift */; };
+		948A456926D4D09400CE3E4B /* RealmFotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948A456826D4D09400CE3E4B /* RealmFotos.swift */; };
+		948A456D26D8D79900CE3E4B /* RealmGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948A456C26D8D79900CE3E4B /* RealmGroup.swift */; };
+		948A456F26D8D9B500CE3E4B /* NetworkGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948A456E26D8D9B500CE3E4B /* NetworkGroup.swift */; };
+		948A457126D8F43D00CE3E4B /* NetworkProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948A457026D8F43D00CE3E4B /* NetworkProfile.swift */; };
+		948A457326D8F96900CE3E4B /* RealmMyFoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948A457226D8F96900CE3E4B /* RealmMyFoto.swift */; };
+		948A457526D91DA200CE3E4B /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948A457426D91DA200CE3E4B /* Profile.swift */; };
+		948A457926DB607100CE3E4B /* NetworkNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948A457826DB607100CE3E4B /* NetworkNews.swift */; };
+		948A458126DB773900CE3E4B /* RealmNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948A458026DB773900CE3E4B /* RealmNews.swift */; };
+		949D6B8126C04511008F3E7F /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949D6B8026C04510008F3E7F /* LoginController.swift */; };
+		949D6B8626C2EE59008F3E7F /* NetworkFriends.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949D6B8526C2EE59008F3E7F /* NetworkFriends.swift */; };
+		949D6B8926C517CA008F3E7F /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 949D6B8826C517CA008F3E7F /* SwiftyJSON */; };
+		949D6B8C26C5182C008F3E7F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 949D6B8B26C5182C008F3E7F /* Kingfisher */; };
+		949D6B8F26C5185A008F3E7F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 949D6B8E26C5185A008F3E7F /* Alamofire */; };
+		94AFE2B226886BF600CBF5DD /* MyFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AFE2B126886BF600CBF5DD /* MyFriendsViewController.swift */; };
+		94D649C72674BF0600100CEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D649C62674BF0600100CEF /* AppDelegate.swift */; };
+		94D649C92674BF0600100CEF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D649C82674BF0600100CEF /* SceneDelegate.swift */; };
+		94D649CE2674BF0600100CEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94D649CC2674BF0600100CEF /* Main.storyboard */; };
+		94D649D02674BF0800100CEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94D649CF2674BF0800100CEF /* Assets.xcassets */; };
+		94D649D32674BF0800100CEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94D649D12674BF0800100CEF /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		941EAFE126886F2200B8BC8A /* UniversalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalTableViewCell.swift; sourceTree = "<group>"; };
+		941EAFE226886F2200B8BC8A /* UniversalTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UniversalTableViewCell.xib; sourceTree = "<group>"; };
+		941EAFE82688E05300B8BC8A /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		941EAFEA2688E1BD00B8BC8A /* MyTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
+		941EAFEE268904C000B8BC8A /* FotoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FotoController.swift; sourceTree = "<group>"; };
+		941EAFF02689053B00B8BC8A /* FotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FotoCell.swift; sourceTree = "<group>"; };
+		941EAFF12689053B00B8BC8A /* FotoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FotoCell.xib; sourceTree = "<group>"; };
+		941EAFF42689193400B8BC8A /* AllGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGroupViewController.swift; sourceTree = "<group>"; };
+		941EAFF6268921BF00B8BC8A /* MyGroupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGroupController.swift; sourceTree = "<group>"; };
+		941EB0062692079C00B8BC8A /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		941EB00A2694CD0D00B8BC8A /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		941EB01226A1EF6400B8BC8A /* FullSizeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullSizeViewController.swift; sourceTree = "<group>"; };
+		941EB01426A1F22000B8BC8A /* FullSizeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullSizeCollectionViewCell.swift; sourceTree = "<group>"; };
+		941EB01526A1F22000B8BC8A /* FullSizeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FullSizeCollectionViewCell.xib; sourceTree = "<group>"; };
+		941EB01E26B9B30D00B8BC8A /* session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = session.swift; sourceTree = "<group>"; };
+		941EB02026B9B86900B8BC8A /* MyProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileController.swift; sourceTree = "<group>"; };
+		941EB02426BB16DC00B8BC8A /* MyFotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		941EB02526BB16DC00B8BC8A /* MyFotoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyFotoCollectionViewCell.xib; sourceTree = "<group>"; };
+		94206B1F26F485390084E2BF /* TextNewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextNewsCell.swift; sourceTree = "<group>"; };
+		94206B2026F485390084E2BF /* TextNewsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextNewsCell.xib; sourceTree = "<group>"; };
+		94206B2326F4858F0084E2BF /* ImageNewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageNewsCell.swift; sourceTree = "<group>"; };
+		94206B2426F4858F0084E2BF /* ImageNewsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageNewsCell.xib; sourceTree = "<group>"; };
+		94206B2726F485B30084E2BF /* InfoNewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoNewsCell.swift; sourceTree = "<group>"; };
+		94206B2826F485B30084E2BF /* InfoNewsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoNewsCell.xib; sourceTree = "<group>"; };
+		948A456126C9578F00CE3E4B /* RealmFriend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmFriend.swift; sourceTree = "<group>"; };
+		948A456326C977DA00CE3E4B /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		948A456826D4D09400CE3E4B /* RealmFotos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmFotos.swift; sourceTree = "<group>"; };
+		948A456C26D8D79900CE3E4B /* RealmGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmGroup.swift; sourceTree = "<group>"; };
+		948A456E26D8D9B500CE3E4B /* NetworkGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkGroup.swift; sourceTree = "<group>"; };
+		948A457026D8F43D00CE3E4B /* NetworkProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProfile.swift; sourceTree = "<group>"; };
+		948A457226D8F96900CE3E4B /* RealmMyFoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmMyFoto.swift; sourceTree = "<group>"; };
+		948A457426D91DA200CE3E4B /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		948A457826DB607100CE3E4B /* NetworkNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkNews.swift; sourceTree = "<group>"; };
+		948A458026DB773900CE3E4B /* RealmNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmNews.swift; sourceTree = "<group>"; };
+		949D6B8026C04510008F3E7F /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		949D6B8526C2EE59008F3E7F /* NetworkFriends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkFriends.swift; sourceTree = "<group>"; };
+		94AFE2B126886BF600CBF5DD /* MyFriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFriendsViewController.swift; sourceTree = "<group>"; };
+		94D649C32674BF0600100CEF /* MyVKclient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyVKclient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		94D649C62674BF0600100CEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		94D649C82674BF0600100CEF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		94D649CD2674BF0600100CEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		94D649CF2674BF0800100CEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		94D649D22674BF0800100CEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		94D649D42674BF0800100CEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		94D649C02674BF0600100CEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94206B1A26F39EF70084E2BF /* RealmSwift in Frameworks */,
+				949D6B8F26C5185A008F3E7F /* Alamofire in Frameworks */,
+				949D6B8C26C5182C008F3E7F /* Kingfisher in Frameworks */,
+				949D6B8926C517CA008F3E7F /* SwiftyJSON in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		941EAFE526889A2300B8BC8A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				941EAFE82688E05300B8BC8A /* Group.swift */,
+				941EB0062692079C00B8BC8A /* News.swift */,
+				948A456126C9578F00CE3E4B /* RealmFriend.swift */,
+				948A456326C977DA00CE3E4B /* Friend.swift */,
+				948A456826D4D09400CE3E4B /* RealmFotos.swift */,
+				948A456C26D8D79900CE3E4B /* RealmGroup.swift */,
+				948A457226D8F96900CE3E4B /* RealmMyFoto.swift */,
+				948A457426D91DA200CE3E4B /* Profile.swift */,
+				948A458026DB773900CE3E4B /* RealmNews.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		941EAFEC268903FD00B8BC8A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				94AFE2B126886BF600CBF5DD /* MyFriendsViewController.swift */,
+				941EAFEA2688E1BD00B8BC8A /* MyTabBarController.swift */,
+				941EAFEE268904C000B8BC8A /* FotoController.swift */,
+				941EAFF42689193400B8BC8A /* AllGroupViewController.swift */,
+				941EAFF6268921BF00B8BC8A /* MyGroupController.swift */,
+				941EB00A2694CD0D00B8BC8A /* NewsViewController.swift */,
+				941EB01226A1EF6400B8BC8A /* FullSizeViewController.swift */,
+				941EB02026B9B86900B8BC8A /* MyProfileController.swift */,
+				949D6B8026C04510008F3E7F /* LoginController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		941EAFED2689042200B8BC8A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				941EAFE226886F2200B8BC8A /* UniversalTableViewCell.xib */,
+				941EAFE126886F2200B8BC8A /* UniversalTableViewCell.swift */,
+				941EAFF02689053B00B8BC8A /* FotoCell.swift */,
+				941EAFF12689053B00B8BC8A /* FotoCell.xib */,
+				941EB01426A1F22000B8BC8A /* FullSizeCollectionViewCell.swift */,
+				941EB01526A1F22000B8BC8A /* FullSizeCollectionViewCell.xib */,
+				941EB02426BB16DC00B8BC8A /* MyFotoCollectionViewCell.swift */,
+				941EB02526BB16DC00B8BC8A /* MyFotoCollectionViewCell.xib */,
+				94206B1F26F485390084E2BF /* TextNewsCell.swift */,
+				94206B2026F485390084E2BF /* TextNewsCell.xib */,
+				94206B2326F4858F0084E2BF /* ImageNewsCell.swift */,
+				94206B2426F4858F0084E2BF /* ImageNewsCell.xib */,
+				94206B2726F485B30084E2BF /* InfoNewsCell.swift */,
+				94206B2826F485B30084E2BF /* InfoNewsCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		941EB01D26B9B2D200B8BC8A /* Patterns */ = {
+			isa = PBXGroup;
+			children = (
+				941EB01E26B9B30D00B8BC8A /* session.swift */,
+			);
+			path = Patterns;
+			sourceTree = "<group>";
+		};
+		949D6B8226C2ED7E008F3E7F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				949D6B8526C2EE59008F3E7F /* NetworkFriends.swift */,
+				948A456E26D8D9B500CE3E4B /* NetworkGroup.swift */,
+				948A457026D8F43D00CE3E4B /* NetworkProfile.swift */,
+				948A457826DB607100CE3E4B /* NetworkNews.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		94D649BA2674BF0600100CEF = {
+			isa = PBXGroup;
+			children = (
+				94D649C52674BF0600100CEF /* MyVKclient */,
+				94D649C42674BF0600100CEF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		94D649C42674BF0600100CEF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				94D649C32674BF0600100CEF /* MyVKclient.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		94D649C52674BF0600100CEF /* MyVKclient */ = {
+			isa = PBXGroup;
+			children = (
+				94D649C62674BF0600100CEF /* AppDelegate.swift */,
+				94D649C82674BF0600100CEF /* SceneDelegate.swift */,
+				941EAFED2689042200B8BC8A /* Cell */,
+				941EAFEC268903FD00B8BC8A /* Controllers */,
+				94D649CC2674BF0600100CEF /* Main.storyboard */,
+				941EAFE526889A2300B8BC8A /* Model */,
+				949D6B8226C2ED7E008F3E7F /* Core */,
+				941EB01D26B9B2D200B8BC8A /* Patterns */,
+				94D649CF2674BF0800100CEF /* Assets.xcassets */,
+				94D649D12674BF0800100CEF /* LaunchScreen.storyboard */,
+				94D649D42674BF0800100CEF /* Info.plist */,
+			);
+			path = MyVKclient;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		94D649C22674BF0600100CEF /* MyVKclient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94D649D72674BF0800100CEF /* Build configuration list for PBXNativeTarget "MyVKclient" */;
+			buildPhases = (
+				94D649BF2674BF0600100CEF /* Sources */,
+				94D649C02674BF0600100CEF /* Frameworks */,
+				94D649C12674BF0600100CEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyVKclient;
+			packageProductDependencies = (
+				949D6B8826C517CA008F3E7F /* SwiftyJSON */,
+				949D6B8B26C5182C008F3E7F /* Kingfisher */,
+				949D6B8E26C5185A008F3E7F /* Alamofire */,
+				94206B1926F39EF70084E2BF /* RealmSwift */,
+			);
+			productName = MyVKclient;
+			productReference = 94D649C32674BF0600100CEF /* MyVKclient.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		94D649BB2674BF0600100CEF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					94D649C22674BF0600100CEF = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = 94D649BE2674BF0600100CEF /* Build configuration list for PBXProject "MyVKclient" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 94D649BA2674BF0600100CEF;
+			packageReferences = (
+				949D6B8726C517CA008F3E7F /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				949D6B8A26C5182C008F3E7F /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				949D6B8D26C5185A008F3E7F /* XCRemoteSwiftPackageReference "Alamofire" */,
+				94206B1826F39EF70084E2BF /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+			);
+			productRefGroup = 94D649C42674BF0600100CEF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				94D649C22674BF0600100CEF /* MyVKclient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		94D649C12674BF0600100CEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				941EB02726BB16DC00B8BC8A /* MyFotoCollectionViewCell.xib in Resources */,
+				94D649D32674BF0800100CEF /* LaunchScreen.storyboard in Resources */,
+				941EAFF32689053B00B8BC8A /* FotoCell.xib in Resources */,
+				94D649D02674BF0800100CEF /* Assets.xcassets in Resources */,
+				94D649CE2674BF0600100CEF /* Main.storyboard in Resources */,
+				94206B2226F4853A0084E2BF /* TextNewsCell.xib in Resources */,
+				941EAFE426886F2200B8BC8A /* UniversalTableViewCell.xib in Resources */,
+				94206B2626F4858F0084E2BF /* ImageNewsCell.xib in Resources */,
+				941EB01726A1F22000B8BC8A /* FullSizeCollectionViewCell.xib in Resources */,
+				94206B2A26F485B30084E2BF /* InfoNewsCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		94D649BF2674BF0600100CEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94AFE2B226886BF600CBF5DD /* MyFriendsViewController.swift in Sources */,
+				941EAFF7268921BF00B8BC8A /* MyGroupController.swift in Sources */,
+				941EB01F26B9B30D00B8BC8A /* session.swift in Sources */,
+				948A456D26D8D79900CE3E4B /* RealmGroup.swift in Sources */,
+				948A456226C9578F00CE3E4B /* RealmFriend.swift in Sources */,
+				941EB01626A1F22000B8BC8A /* FullSizeCollectionViewCell.swift in Sources */,
+				941EB01326A1EF6400B8BC8A /* FullSizeViewController.swift in Sources */,
+				941EB0072692079C00B8BC8A /* News.swift in Sources */,
+				941EB00B2694CD0D00B8BC8A /* NewsViewController.swift in Sources */,
+				948A457126D8F43D00CE3E4B /* NetworkProfile.swift in Sources */,
+				941EAFEB2688E1BD00B8BC8A /* MyTabBarController.swift in Sources */,
+				948A457926DB607100CE3E4B /* NetworkNews.swift in Sources */,
+				941EAFF22689053B00B8BC8A /* FotoCell.swift in Sources */,
+				94206B2526F4858F0084E2BF /* ImageNewsCell.swift in Sources */,
+				948A456F26D8D9B500CE3E4B /* NetworkGroup.swift in Sources */,
+				948A456426C977DA00CE3E4B /* Friend.swift in Sources */,
+				941EAFE92688E05300B8BC8A /* Group.swift in Sources */,
+				948A456926D4D09400CE3E4B /* RealmFotos.swift in Sources */,
+				948A457526D91DA200CE3E4B /* Profile.swift in Sources */,
+				949D6B8126C04511008F3E7F /* LoginController.swift in Sources */,
+				94D649C72674BF0600100CEF /* AppDelegate.swift in Sources */,
+				941EAFF52689193400B8BC8A /* AllGroupViewController.swift in Sources */,
+				949D6B8626C2EE59008F3E7F /* NetworkFriends.swift in Sources */,
+				94D649C92674BF0600100CEF /* SceneDelegate.swift in Sources */,
+				948A458126DB773900CE3E4B /* RealmNews.swift in Sources */,
+				94206B2126F4853A0084E2BF /* TextNewsCell.swift in Sources */,
+				941EAFE326886F2200B8BC8A /* UniversalTableViewCell.swift in Sources */,
+				948A457326D8F96900CE3E4B /* RealmMyFoto.swift in Sources */,
+				941EAFEF268904C000B8BC8A /* FotoController.swift in Sources */,
+				941EB02626BB16DC00B8BC8A /* MyFotoCollectionViewCell.swift in Sources */,
+				941EB02126B9B86900B8BC8A /* MyProfileController.swift in Sources */,
+				94206B2926F485B30084E2BF /* InfoNewsCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		94D649CC2674BF0600100CEF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94D649CD2674BF0600100CEF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		94D649D12674BF0800100CEF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94D649D22674BF0800100CEF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		94D649D52674BF0800100CEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		94D649D62674BF0800100CEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		94D649D82674BF0800100CEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4BZXLQGD85;
+				INFOPLIST_FILE = MyVKclient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-.MyVKclient";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		94D649D92674BF0800100CEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4BZXLQGD85;
+				INFOPLIST_FILE = MyVKclient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-.MyVKclient";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		94D649BE2674BF0600100CEF /* Build configuration list for PBXProject "MyVKclient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94D649D52674BF0800100CEF /* Debug */,
+				94D649D62674BF0800100CEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94D649D72674BF0800100CEF /* Build configuration list for PBXNativeTarget "MyVKclient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94D649D82674BF0800100CEF /* Debug */,
+				94D649D92674BF0800100CEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		94206B1826F39EF70084E2BF /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.15.1;
+			};
+		};
+		949D6B8726C517CA008F3E7F /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+		949D6B8A26C5182C008F3E7F /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.3.1;
+			};
+		};
+		949D6B8D26C5185A008F3E7F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		94206B1926F39EF70084E2BF /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 94206B1826F39EF70084E2BF /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+		949D6B8826C517CA008F3E7F /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 949D6B8726C517CA008F3E7F /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		949D6B8B26C5182C008F3E7F /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 949D6B8A26C5182C008F3E7F /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		949D6B8E26C5185A008F3E7F /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 949D6B8D26C5185A008F3E7F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 94D649BB2674BF0600100CEF /* Project object */;
+}
