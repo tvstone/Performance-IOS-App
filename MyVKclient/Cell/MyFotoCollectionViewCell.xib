@@ -22,6 +22,10 @@
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+<<<<<<< HEAD
+=======
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+>>>>>>> lesson3
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="s5t-5u-Ete" secondAttribute="bottom" id="1Cn-am-0Vp"/>
                 <constraint firstItem="s5t-5u-Ete" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="C4A-oe-XhU"/>

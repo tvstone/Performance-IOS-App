@@ -23,6 +23,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
+<<<<<<< HEAD
             uuid = "58746860-3953-4864-843F-66DA6DDD3DD1"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -39,6 +40,8 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
+=======
+>>>>>>> lesson3
             uuid = "0FB0323B-7FE7-4A30-9926-8468829D9F07"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -46,8 +49,13 @@
             filePath = "MyVKclient/Controllers/AllGroupViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
+<<<<<<< HEAD
             startingLineNumber = "29"
             endingLineNumber = "29"
+=======
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+>>>>>>> lesson3
             landmarkName = "AllGroupViewController"
             landmarkType = "3">
          </BreakpointContent>
@@ -55,6 +63,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
+<<<<<<< HEAD
             uuid = "F1AC5873-B65A-4789-9143-63BC782F5B28"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -81,6 +90,18 @@
             startingLineNumber = "58"
             endingLineNumber = "58"
             landmarkName = "viewDidLoad()"
+=======
+            uuid = "5B3802FC-EE0F-423D-9086-772C91808D0C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyVKclient/Controllers/NewsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "131"
+            endingLineNumber = "131"
+            landmarkName = "tableView(_:heightForRowAt:)"
+>>>>>>> lesson3
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

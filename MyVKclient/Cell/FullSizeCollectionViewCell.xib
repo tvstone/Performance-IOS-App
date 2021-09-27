@@ -22,6 +22,11 @@
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+<<<<<<< HEAD
+=======
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+>>>>>>> lesson3
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="mrL-gM-ViU" secondAttribute="bottom" id="7LK-oY-Z9z"/>
                 <constraint firstAttribute="trailing" secondItem="mrL-gM-ViU" secondAttribute="trailing" id="JDR-jB-lFk"/>

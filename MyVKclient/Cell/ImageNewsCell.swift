@@ -9,10 +9,13 @@ import UIKit
 import Kingfisher
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 class ImageNewsCell: UITableViewCell {
 
     @IBOutlet weak var imageNews: UIImageView!
 =======
+=======
+>>>>>>> lesson3
  class ScaledHeightImageView: UIImageView {
 
     override var intrinsicContentSize: CGSize {
@@ -37,19 +40,27 @@ class ImageNewsCell: UITableViewCell{
 
     @IBOutlet weak var imageNews: UIImageView!
     @IBOutlet weak var heightConstraint: NSLayoutConstraint!
+<<<<<<< HEAD
 >>>>>>> lesson2
+=======
+>>>>>>> lesson3
 
     func clearNewsCell() {
         imageNews.image = nil
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> lesson2
+=======
+
+>>>>>>> lesson3
     }
 
     override func prepareForReuse() {
         clearNewsCell()
+<<<<<<< HEAD
 <<<<<<< HEAD
     }
 
@@ -57,6 +68,8 @@ class ImageNewsCell: UITableViewCell{
         imageNews.kf.setImage(with: URL(string: meNews.imageNews))
     }
 =======
+=======
+>>>>>>> lesson3
 
     }
 
@@ -65,7 +78,10 @@ class ImageNewsCell: UITableViewCell{
         imageNews.kf.setImage(with: URL(string: meNews.imageNews))
 
           }
+<<<<<<< HEAD
 >>>>>>> lesson2
+=======
+>>>>>>> lesson3
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -81,7 +97,12 @@ class ImageNewsCell: UITableViewCell{
     
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 
 >>>>>>> lesson2
+=======
+
+
+>>>>>>> lesson3

@@ -7,13 +7,17 @@
 
 import UIKit
 import RealmSwift
+<<<<<<< HEAD
 import Kingfisher
+=======
+>>>>>>> lesson3
 
 final class MyTabBarController: UITabBarController {
 
     private let network = NetworkFriends()
     private let networkGroup = NetworkGroup()
     private let networkProfile = NetworkProfile()
+<<<<<<< HEAD
     private let realm = try! Realm(configuration: Realm.Configuration(deleteRealmIfMigrationNeeded: true))
     private var itemsRealm : Results<RealmFriend>!
     private var fotosRealm : Results<RealmFotos>!
@@ -60,5 +64,32 @@ final class MyTabBarController: UITabBarController {
     }
 
 
+=======
+    private let networkFriendFotos = NetworkFriendFotos()
+    private let realm = try! Realm(configuration: Realm.Configuration(deleteRealmIfMigrationNeeded: true))
+
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        loadQueue()
+        print("=============\(realm.configuration.fileURL as Any)")
+    }
+
+
+
+    func loadQueue() {
+
+        DispatchQueue.global(qos: .userInteractive).async {
+            self.network.pingMyFriends()
+        }
+        DispatchQueue.global(qos: .utility).async {
+            self.networkGroup.pingMyGroups()
+        }
+        DispatchQueue.global(qos: .background).async {
+            self.networkProfile.pingMyFotos()
+        }
+    }
+
+>>>>>>> lesson3
 }
 

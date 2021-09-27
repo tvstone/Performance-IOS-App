@@ -33,10 +33,16 @@
 		94206B2926F485B30084E2BF /* InfoNewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94206B2726F485B30084E2BF /* InfoNewsCell.swift */; };
 		94206B2A26F485B30084E2BF /* InfoNewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94206B2826F485B30084E2BF /* InfoNewsCell.xib */; };
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 		944B566F26F7873F00102698 /* TitleNewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944B566D26F7873F00102698 /* TitleNewsCell.swift */; };
 		944B567026F7873F00102698 /* TitleNewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 944B566E26F7873F00102698 /* TitleNewsCell.xib */; };
 >>>>>>> lesson2
+=======
+		944B566F26F7873F00102698 /* TitleNewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944B566D26F7873F00102698 /* TitleNewsCell.swift */; };
+		944B567026F7873F00102698 /* TitleNewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 944B566E26F7873F00102698 /* TitleNewsCell.xib */; };
+		944B567226FC59D300102698 /* NetworkFriendFotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944B567126FC59D300102698 /* NetworkFriendFotos.swift */; };
+>>>>>>> lesson3
 		948A456226C9578F00CE3E4B /* RealmFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948A456126C9578F00CE3E4B /* RealmFriend.swift */; };
 		948A456426C977DA00CE3E4B /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948A456326C977DA00CE3E4B /* Friend.swift */; };
 		948A456926D4D09400CE3E4B /* RealmFotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948A456826D4D09400CE3E4B /* RealmFotos.swift */; };
@@ -86,10 +92,16 @@
 		94206B2726F485B30084E2BF /* InfoNewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoNewsCell.swift; sourceTree = "<group>"; };
 		94206B2826F485B30084E2BF /* InfoNewsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoNewsCell.xib; sourceTree = "<group>"; };
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 		944B566D26F7873F00102698 /* TitleNewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleNewsCell.swift; sourceTree = "<group>"; };
 		944B566E26F7873F00102698 /* TitleNewsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleNewsCell.xib; sourceTree = "<group>"; };
 >>>>>>> lesson2
+=======
+		944B566D26F7873F00102698 /* TitleNewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleNewsCell.swift; sourceTree = "<group>"; };
+		944B566E26F7873F00102698 /* TitleNewsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleNewsCell.xib; sourceTree = "<group>"; };
+		944B567126FC59D300102698 /* NetworkFriendFotos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkFriendFotos.swift; sourceTree = "<group>"; };
+>>>>>>> lesson3
 		948A456126C9578F00CE3E4B /* RealmFriend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmFriend.swift; sourceTree = "<group>"; };
 		948A456326C977DA00CE3E4B /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		948A456826D4D09400CE3E4B /* RealmFotos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmFotos.swift; sourceTree = "<group>"; };
@@ -177,10 +189,15 @@
 				94206B2726F485B30084E2BF /* InfoNewsCell.swift */,
 				94206B2826F485B30084E2BF /* InfoNewsCell.xib */,
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 				944B566D26F7873F00102698 /* TitleNewsCell.swift */,
 				944B566E26F7873F00102698 /* TitleNewsCell.xib */,
 >>>>>>> lesson2
+=======
+				944B566D26F7873F00102698 /* TitleNewsCell.swift */,
+				944B566E26F7873F00102698 /* TitleNewsCell.xib */,
+>>>>>>> lesson3
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -197,6 +214,10 @@
 			isa = PBXGroup;
 			children = (
 				949D6B8526C2EE59008F3E7F /* NetworkFriends.swift */,
+<<<<<<< HEAD
+=======
+				944B567126FC59D300102698 /* NetworkFriendFotos.swift */,
+>>>>>>> lesson3
 				948A456E26D8D9B500CE3E4B /* NetworkGroup.swift */,
 				948A457026D8F43D00CE3E4B /* NetworkProfile.swift */,
 				948A457826DB607100CE3E4B /* NetworkNews.swift */,
@@ -316,9 +337,13 @@
 				941EAFE426886F2200B8BC8A /* UniversalTableViewCell.xib in Resources */,
 				94206B2626F4858F0084E2BF /* ImageNewsCell.xib in Resources */,
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 				944B567026F7873F00102698 /* TitleNewsCell.xib in Resources */,
 >>>>>>> lesson2
+=======
+				944B567026F7873F00102698 /* TitleNewsCell.xib in Resources */,
+>>>>>>> lesson3
 				941EB01726A1F22000B8BC8A /* FullSizeCollectionViewCell.xib in Resources */,
 				94206B2A26F485B30084E2BF /* InfoNewsCell.xib in Resources */,
 			);
@@ -331,6 +356,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				94AFE2B226886BF600CBF5DD /* MyFriendsViewController.swift in Sources */,
 				941EAFF7268921BF00B8BC8A /* MyGroupController.swift in Sources */,
 				941EB01F26B9B30D00B8BC8A /* session.swift in Sources */,
@@ -338,6 +364,13 @@
 =======
 				944B566F26F7873F00102698 /* TitleNewsCell.swift in Sources */,
 >>>>>>> lesson2
+=======
+				944B567226FC59D300102698 /* NetworkFriendFotos.swift in Sources */,
+				94AFE2B226886BF600CBF5DD /* MyFriendsViewController.swift in Sources */,
+				941EAFF7268921BF00B8BC8A /* MyGroupController.swift in Sources */,
+				941EB01F26B9B30D00B8BC8A /* session.swift in Sources */,
+				944B566F26F7873F00102698 /* TitleNewsCell.swift in Sources */,
+>>>>>>> lesson3
 				948A456D26D8D79900CE3E4B /* RealmGroup.swift in Sources */,
 				948A456226C9578F00CE3E4B /* RealmFriend.swift in Sources */,
 				941EB01626A1F22000B8BC8A /* FullSizeCollectionViewCell.swift in Sources */,

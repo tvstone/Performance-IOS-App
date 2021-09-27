@@ -5,9 +5,12 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
 >>>>>>> lesson2
+=======
+>>>>>>> lesson3
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -20,6 +23,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+<<<<<<< HEAD
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y61-vf-GHc">
 <<<<<<< HEAD
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -39,18 +43,34 @@
                     <constraint firstAttribute="bottom" secondItem="y61-vf-GHc" secondAttribute="bottom" id="fdD-Qj-k4I"/>
 =======
                 <color key="backgroundColor" systemColor="systemGray6Color"/>
+=======
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y61-vf-GHc">
+                        <rect key="frame" x="4" y="4" width="312" height="36"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Book" family="Bodoni 72 Oldstyle" pointSize="18"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+>>>>>>> lesson3
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="y61-vf-GHc" secondAttribute="trailing" constant="4" id="9hN-MP-boJ"/>
                     <constraint firstItem="y61-vf-GHc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="9lc-ZW-193"/>
                     <constraint firstItem="y61-vf-GHc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="4" id="Vyu-3i-IdS"/>
                     <constraint firstAttribute="bottom" secondItem="y61-vf-GHc" secondAttribute="bottom" constant="4" id="fdD-Qj-k4I"/>
+<<<<<<< HEAD
 >>>>>>> lesson2
+=======
+>>>>>>> lesson3
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="textNews" destination="y61-vf-GHc" id="zM1-Ri-GRn"/>
             </connections>
+<<<<<<< HEAD
 <<<<<<< HEAD
             <point key="canvasLocation" x="132" y="102"/>
         </tableViewCell>
@@ -65,4 +85,9 @@
         </systemColor>
     </resources>
 >>>>>>> lesson2
+=======
+            <point key="canvasLocation" x="131.8840579710145" y="101.78571428571428"/>
+        </tableViewCell>
+    </objects>
+>>>>>>> lesson3
 </document>

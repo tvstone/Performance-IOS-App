@@ -9,7 +9,10 @@ final class AllGroupViewController: UITableViewController {
     private var itemsGroupRealm : Results<RealmGroup>!
     private var allGroup = [Group]()
     private let reuseIdentifareCellGroup = "reuseIdentifareCellGroup"
+<<<<<<< HEAD
 //    private var groupChangedToken : NotificationToken?
+=======
+>>>>>>> lesson3
 
     func  setupGroup() -> [Group] {
         var itogArray = [Group]()
@@ -33,6 +36,7 @@ final class AllGroupViewController: UITableViewController {
         allGroup = setupGroup()
         self.tableView.register(UINib(nibName: "UniversalTableViewCell", bundle: nil),
                                 forCellReuseIdentifier: reuseIdentifareCellGroup)
+<<<<<<< HEAD
 //        do {
 //            let realm = try Realm()
 //            let selectGroups = realm.objects(RealmGroup.self)
@@ -49,6 +53,8 @@ final class AllGroupViewController: UITableViewController {
 //        } catch {
 //            print(error)
 //        }
+=======
+>>>>>>> lesson3
     }
     
 

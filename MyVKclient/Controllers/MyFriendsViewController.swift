@@ -18,15 +18,24 @@ final class MyFriendsViewController: UIViewController {
     private var friendsArray = [Friend]()
     private var searchFriendsArray = [Friend]()
     private var searchFlag = false
+<<<<<<< HEAD
     private let tabBar = MyTabBarController()
     private let network = NetworkFriends()
 
+=======
+    private let networkFriend = NetworkFriends()
+    private let networkFriendFotos = NetworkFriendFotos()
+>>>>>>> lesson3
 
     func myFriendsArray() -> [Friend] {
 
         if searchFlag {
             return searchFriendsArray
         }
+<<<<<<< HEAD
+=======
+
+>>>>>>> lesson3
         return friendsArray
     }
 
@@ -34,6 +43,10 @@ final class MyFriendsViewController: UIViewController {
         var resultArray = [String]()
 
         for item in myFriendsArray() {
+<<<<<<< HEAD
+=======
+
+>>>>>>> lesson3
             let nameLetter = String(item.nameFriend.prefix(1))
             if !resultArray.contains(nameLetter) {
                 resultArray.append(nameLetter)
@@ -49,22 +62,42 @@ final class MyFriendsViewController: UIViewController {
             let nameLetter = String(item.nameFriend.prefix(1))
             if nameLetter == letter {
                 resultArray.append(item)
+<<<<<<< HEAD
             }
         }
+=======
+
+            }
+        }
+
+>>>>>>> lesson3
         return resultArray
     }
 
     override func viewWillAppear(_ animated: Bool) {
+<<<<<<< HEAD
         super.viewWillAppear(animated)
         FriendsTableView.reloadData()
 
+=======
+        FriendsTableView.reloadData()
+>>>>>>> lesson3
     }
 
     override func viewDidAppear(_ animated: Bool) {
         navigationItem.title = "Мои друзья"
+<<<<<<< HEAD
         friendsArray = tabBar.setupFriend()
         friendsArray = friendsArray.sorted(by: {$0.nameFriend < $1.nameFriend})
         FriendsTableView.reloadData()
+=======
+        friendsArray = networkFriend.setupFriend()
+        friendsArray = friendsArray.sorted(by: {$0.nameFriend < $1.nameFriend})
+        FriendsTableView.reloadData()
+        searchBar.searchBarStyle = .prominent
+        searchBar.alpha = 1
+        searchBar.autoresizesSubviews = true
+>>>>>>> lesson3
 
     }
 
@@ -72,12 +105,19 @@ final class MyFriendsViewController: UIViewController {
         super.viewDidLoad()
 
         self.FriendsTableView.register(UINib(nibName: "UniversalTableViewCell", bundle: nil), forCellReuseIdentifier: reuseIdentifireUniversalTableViewCell)
+<<<<<<< HEAD
         
+=======
+>>>>>>> lesson3
         FriendsTableView.delegate = self
         FriendsTableView.dataSource = self
         searchBar.delegate = self
         navigationItem.title = "Идет загрузка данных ..."
+<<<<<<< HEAD
 
+=======
+        searchBar.searchBarStyle = .minimal
+>>>>>>> lesson3
     }
 }
 
@@ -116,12 +156,21 @@ extension MyFriendsViewController : UITableViewDelegate, UITableViewDataSource {
 
         guard let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifireUniversalTableViewCell, for: indexPath) as? UniversalTableViewCell else { return UITableViewCell()}
         let arrayByLetterItems = filteredOnCharacter(letter: extractFirstSimbol()[indexPath.section])
+<<<<<<< HEAD
 
+=======
+        
+        networkFriendFotos.pingMyFriendFotos(idFriend: arrayByLetterItems[indexPath.row].idFriend)
+>>>>>>> lesson3
         cell.configureCell(user: arrayByLetterItems[indexPath.row])
 
         return cell
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> lesson3
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat{
         return 60
@@ -135,8 +184,16 @@ extension MyFriendsViewController : UITableViewDelegate, UITableViewDataSource {
            let user = sender as? Friend {
             dst.fotoArray = user.fotos
             dst.likeFoto = user.like
+<<<<<<< HEAD
             
         }
+=======
+            dst.reloadInputViews()
+
+
+        }
+
+>>>>>>> lesson3
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
@@ -144,6 +201,7 @@ extension MyFriendsViewController : UITableViewDelegate, UITableViewDataSource {
         guard let cell = tableView.cellForRow(at: indexPath) as? UniversalTableViewCell,
               let cellObject = cell.saveObject as? Friend
         else {return}
+<<<<<<< HEAD
         performSegue(withIdentifier: segueFriendsToFoto, sender: cellObject)
     }
 
@@ -151,6 +209,17 @@ extension MyFriendsViewController : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return extractFirstSimbol()[section].uppercased()
     }
+=======
+
+        performSegue(withIdentifier: segueFriendsToFoto, sender: cellObject)
+
+    }
+
+
+    //    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    //        return extractFirstSimbol()[section].uppercased()
+    //    }
+>>>>>>> lesson3
 }
 
 

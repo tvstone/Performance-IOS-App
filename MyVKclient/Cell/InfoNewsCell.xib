@@ -5,9 +5,13 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
 >>>>>>> lesson2
+=======
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+>>>>>>> lesson3
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -25,24 +29,40 @@
                         <constraints>
                             <constraint firstAttribute="width" constant="20" id="Gpy-bE-vH3"/>
                         </constraints>
+<<<<<<< HEAD
                         <color key="tintColor" red="0.2160676034" green="0.06041329812" blue="0.96620899439999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <state key="normal" title="Button" image="suit.heart" catalog="system"/>
+=======
+                        <color key="tintColor" systemColor="systemTealColor"/>
+                        <state key="normal" title="Button" image="suit.heart" catalog="system">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+>>>>>>> lesson3
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecq-iM-A96">
                         <rect key="frame" x="4" y="17.5" width="37.5" height="18"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
+<<<<<<< HEAD
                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+=======
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+>>>>>>> lesson3
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nuz-bL-8zC">
                         <rect key="frame" x="87.5" y="17.5" width="37.5" height="18"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
+<<<<<<< HEAD
                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+=======
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+>>>>>>> lesson3
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z9o-uI-EBO">
                         <rect key="frame" x="171" y="17.5" width="37.5" height="18"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
+<<<<<<< HEAD
                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -52,12 +72,28 @@
                             <constraint firstAttribute="width" constant="20" id="rtO-mi-5Bz"/>
                         </constraints>
                         <color key="tintColor" red="0.2160676034" green="0.06041329812" blue="0.96620899439999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+=======
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9dC-kl-AS0">
+                        <rect key="frame" x="214.5" y="15" width="20" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="rtO-mi-5Bz"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Book" family="Bodoni 72 Oldstyle" pointSize="19"/>
+                        <color key="tintColor" systemColor="systemTealColor"/>
+>>>>>>> lesson3
                         <state key="normal" title="Button" image="arrowshape.turn.up.right" catalog="system"/>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eKh-P7-Qql">
                         <rect key="frame" x="473.5" y="18" width="35.5" height="17"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
+<<<<<<< HEAD
                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+=======
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+>>>>>>> lesson3
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="61E-Tp-Joc">
@@ -65,6 +101,7 @@
                         <constraints>
                             <constraint firstAttribute="width" constant="20" id="4yW-QO-hs7"/>
                         </constraints>
+<<<<<<< HEAD
                         <color key="tintColor" red="0.05509173388" green="0.064956118930000001" blue="0.96620899439999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <state key="normal" title="Button" image="bubble.left" catalog="system"/>
                     </button>
@@ -73,6 +110,16 @@
 =======
                 <color key="backgroundColor" systemColor="systemGray6Color"/>
 >>>>>>> lesson2
+=======
+                        <color key="tintColor" systemColor="systemTealColor"/>
+                        <state key="normal" title="Button" image="bubble.left" catalog="system">
+                            <color key="titleColor" red="0.83452059860000005" green="0.94966541230000001" blue="0.96620899439999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </state>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+>>>>>>> lesson3
                 <constraints>
                     <constraint firstItem="9dC-kl-AS0" firstAttribute="leading" secondItem="Z9o-uI-EBO" secondAttribute="trailing" constant="6" id="7LX-gH-rU6"/>
                     <constraint firstAttribute="trailing" secondItem="eKh-P7-Qql" secondAttribute="trailing" constant="4" id="Ad8-g5-Yrb"/>
@@ -108,10 +155,16 @@
         <image name="bubble.left" catalog="system" width="128" height="110"/>
         <image name="suit.heart" catalog="system" width="128" height="109"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
 >>>>>>> lesson2
+=======
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+>>>>>>> lesson3
     </resources>
 </document>

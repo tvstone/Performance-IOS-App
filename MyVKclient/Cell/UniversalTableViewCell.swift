@@ -19,7 +19,11 @@ final class UniversalTableViewCell: UITableViewCell {
 
     private var cornerRadius : CGFloat = 25
     private var shadowOffset :CGSize = CGSize(width: 5, height: 5)
+<<<<<<< HEAD
     private var shadowColor : UIColor = #colorLiteral(red: 0.09019608051, green: 0, blue: 0.3019607961, alpha: 1)
+=======
+    private var shadowColor : UIColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+>>>>>>> lesson3
     private var shadowRadius :CGFloat = 5
     private var shadowOpacity :Float = 0.5
     
