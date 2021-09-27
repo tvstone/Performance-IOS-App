@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+>>>>>>> lesson2
+=======
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+>>>>>>> lesson3
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="53" id="KGk-i7-Jjw" customClass="InfoNewsCell" customModule="MyVKclient" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="513" height="53"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="513" height="53"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bon-ah-Dz0">
+                        <rect key="frame" x="47.5" y="15.5" width="20" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="Gpy-bE-vH3"/>
+                        </constraints>
+<<<<<<< HEAD
+                        <color key="tintColor" red="0.2160676034" green="0.06041329812" blue="0.96620899439999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <state key="normal" title="Button" image="suit.heart" catalog="system"/>
+=======
+                        <color key="tintColor" systemColor="systemTealColor"/>
+                        <state key="normal" title="Button" image="suit.heart" catalog="system">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+>>>>>>> lesson3
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecq-iM-A96">
+                        <rect key="frame" x="4" y="17.5" width="37.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+<<<<<<< HEAD
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+=======
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+>>>>>>> lesson3
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nuz-bL-8zC">
+                        <rect key="frame" x="87.5" y="17.5" width="37.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+<<<<<<< HEAD
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+=======
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+>>>>>>> lesson3
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z9o-uI-EBO">
+                        <rect key="frame" x="171" y="17.5" width="37.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+<<<<<<< HEAD
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9dC-kl-AS0">
+                        <rect key="frame" x="214.5" y="15.5" width="20" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="rtO-mi-5Bz"/>
+                        </constraints>
+                        <color key="tintColor" red="0.2160676034" green="0.06041329812" blue="0.96620899439999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+=======
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9dC-kl-AS0">
+                        <rect key="frame" x="214.5" y="15" width="20" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="rtO-mi-5Bz"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Book" family="Bodoni 72 Oldstyle" pointSize="19"/>
+                        <color key="tintColor" systemColor="systemTealColor"/>
+>>>>>>> lesson3
+                        <state key="normal" title="Button" image="arrowshape.turn.up.right" catalog="system"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eKh-P7-Qql">
+                        <rect key="frame" x="473.5" y="18" width="35.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+<<<<<<< HEAD
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+=======
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+>>>>>>> lesson3
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="61E-Tp-Joc">
+                        <rect key="frame" x="131" y="15.5" width="20" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="4yW-QO-hs7"/>
+                        </constraints>
+<<<<<<< HEAD
+                        <color key="tintColor" red="0.05509173388" green="0.064956118930000001" blue="0.96620899439999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <state key="normal" title="Button" image="bubble.left" catalog="system"/>
+                    </button>
+                </subviews>
+<<<<<<< HEAD
+=======
+                <color key="backgroundColor" systemColor="systemGray6Color"/>
+>>>>>>> lesson2
+=======
+                        <color key="tintColor" systemColor="systemTealColor"/>
+                        <state key="normal" title="Button" image="bubble.left" catalog="system">
+                            <color key="titleColor" red="0.83452059860000005" green="0.94966541230000001" blue="0.96620899439999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </state>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+>>>>>>> lesson3
+                <constraints>
+                    <constraint firstItem="9dC-kl-AS0" firstAttribute="leading" secondItem="Z9o-uI-EBO" secondAttribute="trailing" constant="6" id="7LX-gH-rU6"/>
+                    <constraint firstAttribute="trailing" secondItem="eKh-P7-Qql" secondAttribute="trailing" constant="4" id="Ad8-g5-Yrb"/>
+                    <constraint firstItem="9dC-kl-AS0" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="CPA-So-ObL"/>
+                    <constraint firstItem="ecq-iM-A96" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="4" id="KY7-A7-5kS"/>
+                    <constraint firstItem="bon-ah-Dz0" firstAttribute="leading" secondItem="ecq-iM-A96" secondAttribute="trailing" constant="6" id="QS1-dK-dcK"/>
+                    <constraint firstItem="Z9o-uI-EBO" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="SJx-so-0Ss"/>
+                    <constraint firstItem="Nuz-bL-8zC" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ZdL-XZ-d4f"/>
+                    <constraint firstItem="Nuz-bL-8zC" firstAttribute="leading" secondItem="bon-ah-Dz0" secondAttribute="trailing" constant="20" id="b8l-QT-LrE"/>
+                    <constraint firstItem="61E-Tp-Joc" firstAttribute="leading" secondItem="Nuz-bL-8zC" secondAttribute="trailing" constant="6" id="bcH-iB-ck1"/>
+                    <constraint firstItem="ecq-iM-A96" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="c4m-Lu-LDn"/>
+                    <constraint firstItem="Z9o-uI-EBO" firstAttribute="leading" secondItem="61E-Tp-Joc" secondAttribute="trailing" constant="20" id="e2H-M5-BRw"/>
+                    <constraint firstItem="61E-Tp-Joc" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="gvI-Qr-oS0"/>
+                    <constraint firstItem="bon-ah-Dz0" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="iTN-wA-jt6"/>
+                    <constraint firstItem="eKh-P7-Qql" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="sg1-ta-6fn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="commentButton" destination="61E-Tp-Joc" id="BAA-lt-RIH"/>
+                <outlet property="commentCount" destination="Nuz-bL-8zC" id="cVI-k4-jCa"/>
+                <outlet property="dateNews" destination="eKh-P7-Qql" id="nBM-5p-kT0"/>
+                <outlet property="likeButtom" destination="bon-ah-Dz0" id="529-De-euw"/>
+                <outlet property="likeCount" destination="ecq-iM-A96" id="LBN-Tk-nmP"/>
+                <outlet property="repostButton" destination="9dC-kl-AS0" id="OCl-WS-llX"/>
+                <outlet property="repostCount" destination="Z9o-uI-EBO" id="Bzo-IM-VIl"/>
+            </connections>
+            <point key="canvasLocation" x="122.46376811594205" y="104.79910714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrowshape.turn.up.right" catalog="system" width="128" height="106"/>
+        <image name="bubble.left" catalog="system" width="128" height="110"/>
+        <image name="suit.heart" catalog="system" width="128" height="109"/>
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+>>>>>>> lesson2
+=======
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+>>>>>>> lesson3
+    </resources>
+</document>

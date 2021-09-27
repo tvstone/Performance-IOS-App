@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Uf1-VJ-v1Y">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login Controller-->
+        <scene sceneID="6kW-eq-yQl">
+            <objects>
+                <viewController id="Uf1-VJ-v1Y" customClass="LoginController" customModule="MyVKclient" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleAspectFill" id="0uB-3l-Auy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="RkP-W2-a4h">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Загрузка  ..." textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t7K-jB-4Ek">
+                                <rect key="frame" x="153.5" y="543" width="107.5" height="24"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.05509173388" green="0.064956118930000001" blue="0.96620899439999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lwS-fF-vTV"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lwS-fF-vTV" firstAttribute="bottom" secondItem="RkP-W2-a4h" secondAttribute="bottom" id="6si-WQ-lCx"/>
+                            <constraint firstItem="t7K-jB-4Ek" firstAttribute="centerX" secondItem="RkP-W2-a4h" secondAttribute="centerX" id="WCm-Ue-ZmA"/>
+                            <constraint firstItem="RkP-W2-a4h" firstAttribute="top" secondItem="lwS-fF-vTV" secondAttribute="top" id="cls-rK-c5X"/>
+                            <constraint firstItem="lwS-fF-vTV" firstAttribute="trailing" secondItem="RkP-W2-a4h" secondAttribute="trailing" id="fNe-dQ-BLz"/>
+                            <constraint firstItem="RkP-W2-a4h" firstAttribute="leading" secondItem="lwS-fF-vTV" secondAttribute="leading" id="ngX-mK-Dkb"/>
+                            <constraint firstItem="RkP-W2-a4h" firstAttribute="baseline" secondItem="t7K-jB-4Ek" secondAttribute="firstBaseline" constant="300" id="yrO-iT-wlr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="RkP-W2-a4h" id="1cT-Nr-Nlh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u7z-bH-naH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5949.275362318841" y="-1554.2410714285713"/>
+        </scene>
+        <!--My Tab Bar Controller-->
+        <scene sceneID="HWa-45-7RN">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBar" modalPresentationStyle="fullScreen" id="BbH-qn-zdu" customClass="MyTabBarController" customModule="MyVKclient" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="5sc-Rb-Qid"/>
+                    <tabBar key="tabBar" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" id="geI-nQ-TLs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+<<<<<<< HEAD
+=======
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.040534038538824452" green="0.040465666549611576" blue="0.041659954896907214" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="selectedImageTintColor" systemColor="systemTealColor"/>
+>>>>>>> lesson3
+                    </tabBar>
+                    <connections>
+                        <segue destination="nF5-Lg-aze" kind="relationship" relationship="viewControllers" id="DEq-P8-g9l"/>
+                        <segue destination="ZSw-Lz-oz5" kind="relationship" relationship="viewControllers" id="qdu-GO-kkG"/>
+                        <segue destination="0J3-2y-erR" kind="relationship" relationship="viewControllers" id="8qB-oy-XxU"/>
+                        <segue destination="0EE-vt-l3L" kind="relationship" relationship="viewControllers" id="qmx-Wd-jKq"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QDf-d1-p9W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5210" y="-1554"/>
+        </scene>
+        <!--Любимые группы-->
+        <scene sceneID="u7m-mc-Ros">
+            <objects>
+                <tableViewController id="0S5-0C-WsQ" customClass="MyGroupController" customModule="MyVKclient" customModuleProvider="target" sceneMemberID="viewController">
+<<<<<<< HEAD
+<<<<<<< HEAD
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="rf9-nj-EP4">
+=======
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="scrollableAxes" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="rf9-nj-EP4">
+>>>>>>> lesson2
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.82414071570000003" green="0.96620899439999997" blue="0.94957906120000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" red="0.2160676034" green="0.06041329812" blue="0.96620899439999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+=======
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="scrollableAxes" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="rf9-nj-EP4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+>>>>>>> lesson3
+                        <connections>
+                            <outlet property="dataSource" destination="0S5-0C-WsQ" id="5Zx-ie-oZ9"/>
+                            <outlet property="delegate" destination="0S5-0C-WsQ" id="VuN-ZS-60R"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Любимые группы" id="jDw-wn-1qI">
+                        <barButtonItem key="backBarButtonItem" title="&lt;&lt;&lt;" id="PYL-dN-IYc"/>
+                        <barButtonItem key="rightBarButtonItem" title="&lt;&lt;&lt;" image="person.3.fill" catalog="system" style="done" id="IIR-wS-WWg">
+<<<<<<< HEAD
+                            <color key="tintColor" red="0.05509173388" green="0.064956118930000001" blue="0.96620899439999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+=======
+                            <color key="tintColor" systemColor="systemTealColor"/>
+>>>>>>> lesson3
+                            <connections>
+                                <segue destination="uQP-dT-T0N" kind="show" id="WFI-fs-LC9"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oEU-5Y-loD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3413.04347826087" y="-1205.3571428571429"/>
+        </scene>
+        <!--Все мои группы-->
+        <scene sceneID="ZPe-b7-TWR">
+            <objects>
+                <tableViewController modalPresentationStyle="fullScreen" id="uQP-dT-T0N" customClass="AllGroupViewController" customModule="MyVKclient" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="3iW-4K-vTU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+<<<<<<< HEAD
+                        <color key="backgroundColor" red="0.82414071570000003" green="0.96620899439999997" blue="0.94957906120000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" red="0.2160676034" green="0.06041329812" blue="0.96620899439999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+=======
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+>>>>>>> lesson3
+                        <connections>
+                            <outlet property="dataSource" destination="uQP-dT-T0N" id="FDX-cN-ACh"/>
+                            <outlet property="delegate" destination="uQP-dT-T0N" id="HON-M0-3ht"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Все мои группы" largeTitleDisplayMode="never" id="ESk-b5-7WA"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D2t-AA-WBV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2581" y="-1205"/>
+        </scene>
+        <!--Галерея-->
+        <scene sceneID="kD3-Xw-XHU">
+            <objects>
+                <collectionViewController modalPresentationStyle="fullScreen" id="7yr-f9-wUr" customClass="FotoController" customModule="MyVKclient" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" dataMode="prototypes" id="l9A-7l-XGo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+<<<<<<< HEAD
+                        <color key="backgroundColor" red="0.82414071570000003" green="0.96620899439999997" blue="0.94957906120000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+=======
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+>>>>>>> lesson3
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="2" minimumInteritemSpacing="0.0" sectionInsetReference="safeArea" id="nNt-Km-8IF">
+                            <size key="itemSize" width="200" height="200"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="2" minY="2" maxX="2" maxY="2"/>
+                        </collectionViewFlowLayout>
+                        <cells/>
+                        <connections>
+                            <outlet property="dataSource" destination="7yr-f9-wUr" id="trH-DF-xmU"/>
+                            <outlet property="delegate" destination="7yr-f9-wUr" id="4m0-ZV-Sh3"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Галерея" id="Yfn-gd-OxO"/>
+                    <connections>
+                        <segue destination="pyg-9h-gbJ" kind="show" id="l7p-du-gBO"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ITj-ZM-ban" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2602.898550724638" y="-1925.2232142857142"/>
+        </scene>
+        <!--Профиль-->
+        <scene sceneID="MDV-LZ-Qji">
+            <objects>
+                <viewController title="Профиль" modalPresentationStyle="fullScreen" id="0EE-vt-l3L" customClass="MyProfileController" customModule="MyVKclient" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleAspectFill" id="Hnb-bh-oNS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bXm-cq-PiM">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+<<<<<<< HEAD
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+=======
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+>>>>>>> lesson3
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="XLq-cz-jwC">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QlY-Wo-w7m"/>
+<<<<<<< HEAD
+                        <color key="backgroundColor" red="0.83452059860000005" green="0.94966541230000001" blue="0.96620899439999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" red="0.82414071570000003" green="0.96620899439999997" blue="0.94957906120000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+=======
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+>>>>>>> lesson3
+                        <constraints>
+                            <constraint firstItem="bXm-cq-PiM" firstAttribute="leading" secondItem="QlY-Wo-w7m" secondAttribute="leading" id="CYm-L9-vZS"/>
+                            <constraint firstItem="bXm-cq-PiM" firstAttribute="top" secondItem="QlY-Wo-w7m" secondAttribute="top" id="OBI-f6-7HK"/>
+                            <constraint firstItem="QlY-Wo-w7m" firstAttribute="bottom" secondItem="bXm-cq-PiM" secondAttribute="bottom" id="q8Y-yf-gd3"/>
+                            <constraint firstItem="QlY-Wo-w7m" firstAttribute="trailing" secondItem="bXm-cq-PiM" secondAttribute="trailing" id="sGg-a5-DLN"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Мои фото" image="person.fill" catalog="system" selectedImage="person.fill" id="Utd-Lp-hz8"/>
+                    <navigationItem key="navigationItem" id="Grx-TL-dJ8"/>
+                    <connections>
+                        <outlet property="myGallary" destination="bXm-cq-PiM" id="8WP-Mg-OME"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kDc-ed-ScY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4333.3333333333339" y="-2583.4821428571427"/>
+        </scene>
+        <!--Друзья-->
+        <scene sceneID="0hS-oX-8vS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nF5-Lg-aze" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Друзья" id="cbv-uc-YH6">
+                        <imageReference key="image" image="person.2.fill" catalog="system" symbolScale="large" renderingMode="template"/>
+<<<<<<< HEAD
+=======
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+>>>>>>> lesson3
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Lvh-kA-QeN">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+<<<<<<< HEAD
+                        <color key="backgroundColor" red="0.2160676034" green="0.06041329812" blue="0.96620899439999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" red="0.2160676034" green="0.06041329812" blue="0.96620899439999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+=======
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Book" family="Bodoni 72 Oldstyle" pointSize="28"/>
+                            <color key="textColor" systemColor="systemTealColor"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" systemColor="systemTealColor"/>
+>>>>>>> lesson3
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hN6-M0-avv" kind="relationship" relationship="rootViewController" id="pKu-BC-NMn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QS4-vE-JyV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4330.434782608696" y="-1920.5357142857142"/>
+        </scene>
+        <!--Full Size View Controller-->
+        <scene sceneID="KaK-U5-S5L">
+            <objects>
+                <viewController storyboardIdentifier="FullSizeViewControllerID" id="pyg-9h-gbJ" customClass="FullSizeViewController" customModule="MyVKclient" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleAspectFill" id="Mb0-2p-urD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Gwx-qL-aHf">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+<<<<<<< HEAD
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+=======
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+>>>>>>> lesson3
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="ovS-pZ-HUB">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6ao-MG-S9W"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Gwx-qL-aHf" firstAttribute="top" secondItem="Mb0-2p-urD" secondAttribute="top" id="AcR-g8-EAq"/>
+                            <constraint firstItem="Gwx-qL-aHf" firstAttribute="leading" secondItem="6ao-MG-S9W" secondAttribute="leading" id="bnY-2c-5pq"/>
+                            <constraint firstItem="6ao-MG-S9W" firstAttribute="trailing" secondItem="Gwx-qL-aHf" secondAttribute="trailing" id="c6J-vK-v0x"/>
+                            <constraint firstItem="6ao-MG-S9W" firstAttribute="bottom" secondItem="Gwx-qL-aHf" secondAttribute="bottom" id="tVh-MF-D9Q"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="IeV-aR-XH6"/>
+                    <connections>
+                        <outlet property="backViewFullScreen" destination="Mb0-2p-urD" id="VHh-fl-650"/>
+                        <outlet property="fullSizeViewCollection" destination="Gwx-qL-aHf" id="sTh-d0-D5h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qEN-Mb-GiW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2603" y="-2604"/>
+        </scene>
+        <!--Мои друзья-->
+        <scene sceneID="FFv-Va-qks">
+            <objects>
+                <viewController storyboardIdentifier="myFriends" title="Мои друзья" modalPresentationStyle="fullScreen" id="hN6-M0-avv" customClass="MyFriendsViewController" customModule="MyVKclient" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mPw-2L-UtE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7BT-kQ-GsG">
+                                <rect key="frame" x="0.0" y="139" width="414" height="674"/>
+<<<<<<< HEAD
+                                <color key="backgroundColor" red="0.82414071570000003" green="0.96620899439999997" blue="0.94957906120000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </tableView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="sFK-09-86E">
+                                <rect key="frame" x="0.0" y="88" width="414" height="51"/>
+                                <color key="backgroundColor" red="0.82414071570000003" green="0.96620899439999997" blue="0.94957906120000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <textInputTraits key="textInputTraits"/>
+=======
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <searchBar clearsContextBeforeDrawing="NO" contentMode="redraw" barStyle="blackTranslucent" translatesAutoresizingMaskIntoConstraints="NO" id="sFK-09-86E">
+                                <rect key="frame" x="0.0" y="88" width="414" height="51"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" systemColor="systemTealColor"/>
+                                <color key="barTintColor" red="0.20392158630000001" green="0.20392158630000001" blue="0.20392158630000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
+>>>>>>> lesson3
+                            </searchBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3Qj-vg-frd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sFK-09-86E" firstAttribute="leading" secondItem="3Qj-vg-frd" secondAttribute="leading" id="Cef-9R-Ugo"/>
+                            <constraint firstItem="7BT-kQ-GsG" firstAttribute="trailing" secondItem="3Qj-vg-frd" secondAttribute="trailing" id="Mbi-8u-vN2"/>
+                            <constraint firstItem="7BT-kQ-GsG" firstAttribute="leading" secondItem="3Qj-vg-frd" secondAttribute="leading" id="Qhs-vy-dQP"/>
+                            <constraint firstItem="7BT-kQ-GsG" firstAttribute="top" secondItem="sFK-09-86E" secondAttribute="bottom" id="ZSn-Fn-sPB"/>
+                            <constraint firstItem="7BT-kQ-GsG" firstAttribute="bottom" secondItem="3Qj-vg-frd" secondAttribute="bottom" id="oDm-1I-GH9"/>
+                            <constraint firstItem="sFK-09-86E" firstAttribute="trailing" secondItem="3Qj-vg-frd" secondAttribute="trailing" id="xF0-Qi-DEa"/>
+                            <constraint firstItem="sFK-09-86E" firstAttribute="top" secondItem="3Qj-vg-frd" secondAttribute="top" id="yPS-yl-v6R"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Мои друзья" id="xol-2F-Mi5">
+                        <barButtonItem key="backBarButtonItem" title="&lt;&lt;&lt;" id="1gk-Cx-2sJ"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="FriendsTableView" destination="7BT-kQ-GsG" id="frr-6e-XGl"/>
+                        <outlet property="searchBar" destination="sFK-09-86E" id="cYO-9G-XH9"/>
+                        <segue destination="7yr-f9-wUr" kind="show" identifier="fromFriendsToFoto" id="ccD-Mv-pbc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nia-Hf-2Es" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3436.2318840579715" y="-1921.2053571428571"/>
+        </scene>
+        <!--Группы-->
+        <scene sceneID="dLI-Om-ody">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZSw-Lz-oz5" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Группы" id="Ymo-Wf-zMk">
+                        <imageReference key="image" image="person.3.fill" catalog="system" symbolScale="large" renderingMode="template"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KEt-K9-L8w">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+<<<<<<< HEAD
+                        <color key="backgroundColor" red="0.2160676034" green="0.06041329812" blue="0.96620899439999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" red="0.2160676034" green="0.06041329812" blue="0.96620899439999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+=======
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.089609807769999994" green="0.089458655770000006" blue="0.092098904640000007" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Book" family="Bodoni 72 Oldstyle" pointSize="28"/>
+                            <color key="textColor" systemColor="systemTealColor"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+>>>>>>> lesson3
+                            <color key="textShadowColor" red="0.05509173388" green="0.064956118930000001" blue="0.96620899439999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="0S5-0C-WsQ" kind="relationship" relationship="rootViewController" id="WRu-9p-OC5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gMG-9w-EgA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4323.188405797102" y="-1205.3571428571429"/>
+        </scene>
+        <!--Новости-->
+        <scene sceneID="lN4-ta-iFe">
+            <objects>
+                <navigationController id="0J3-2y-erR" sceneMemberID="viewController">
+<<<<<<< HEAD
+                    <tabBarItem key="tabBarItem" title="Новости" image="globe" catalog="system" id="BjN-iG-2hv"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2Zh-Dn-y7v">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.2160676034" green="0.06041329812" blue="0.96620899439999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+=======
+                    <tabBarItem key="tabBarItem" title="Новости" image="globe" catalog="system" id="BjN-iG-2hv">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2Zh-Dn-y7v">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.089609807769999994" green="0.089458655770000006" blue="0.092098904640000007" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Book" family="Bodoni 72 Oldstyle" pointSize="28"/>
+                            <color key="textColor" systemColor="systemTealColor"/>
+>>>>>>> lesson3
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="MFs-Kg-zVL" kind="relationship" relationship="rootViewController" id="FM5-oB-2uX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ai3-hu-QV0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4330" y="-445"/>
+        </scene>
+        <!--Новости-->
+        <scene sceneID="E9t-ek-oyS">
+            <objects>
+                <viewController title="Новости" id="MFs-Kg-zVL" customClass="NewsViewController" customModule="MyVKclient" customModuleProvider="target" sceneMemberID="viewController">
+<<<<<<< HEAD
+<<<<<<< HEAD
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="QIf-Od-n7X">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+=======
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="never" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="QIf-Od-n7X">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <inset key="scrollIndicatorInsets" minX="0.0" minY="6" maxX="0.0" maxY="0.0"/>
+>>>>>>> lesson2
+=======
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="never" dataMode="prototypes" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="QIf-Od-n7X">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <inset key="scrollIndicatorInsets" minX="0.0" minY="6" maxX="0.0" maxY="0.0"/>
+                        <color key="separatorColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="sectionIndexColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="sectionIndexBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+>>>>>>> lesson3
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Новости" id="6Fx-zw-9OS"/>
+                    <connections>
+                        <outlet property="newsTableView" destination="QIf-Od-n7X" id="ziH-yj-AL8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zcn-fs-q3R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3529" y="-439"/>
+        </scene>
+    </scenes>
+<<<<<<< HEAD
+    <color key="tintColor" systemColor="systemGreenColor"/>
+=======
+    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+>>>>>>> lesson3
+    <resources>
+        <image name="globe" catalog="system" width="128" height="121"/>
+        <image name="person.2.fill" catalog="system" width="128" height="80"/>
+        <image name="person.3.fill" catalog="system" width="128" height="61"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+<<<<<<< HEAD
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+=======
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+>>>>>>> lesson3
+        </systemColor>
+    </resources>
+</document>

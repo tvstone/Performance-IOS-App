@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "dfcd5a68e810eff7632a07dca21cbb36--brother-photoshoot.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
