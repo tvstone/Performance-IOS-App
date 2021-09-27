@@ -10,6 +10,11 @@ import UIKit
 import RealmSwift
 
 struct News{
+<<<<<<< HEAD
+=======
+    var avaGroup : String
+    var nameGroup : String
+>>>>>>> lesson2
     var titleNews : String
     var imageNews : String
     var dateNews : String
@@ -34,13 +39,23 @@ final class NewsModel {
 
         for i in 0 ..< news.count {
 
+<<<<<<< HEAD
+=======
+            let avaGroup = news[i].avaGroup
+            let nameGroup = news[i].nameGroup
+>>>>>>> lesson2
             let textNews = news[i].textNews
             let imageNews = news[i].imageNews
             let dateNews = news[i].dateNews
             let likeNews = news[i].likeNewsCount
             let commentNews = news[i].commentsNewsCount
             let repostNews = news[i].repostNewsCount
+<<<<<<< HEAD
             let newNews = News(titleNews: textNews, imageNews: imageNews, dateNews: dateNews, likeNews: likeNews,
+=======
+            let newNews = News(avaGroup : avaGroup, nameGroup: nameGroup, titleNews: textNews,
+                               imageNews: imageNews, dateNews: dateNews, likeNews: likeNews,
+>>>>>>> lesson2
                                commentNews: commentNews, repostNews: repostNews)
             newsArray.append(newNews)
         }

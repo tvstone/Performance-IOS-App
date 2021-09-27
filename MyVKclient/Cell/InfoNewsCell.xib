@@ -4,6 +4,10 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+<<<<<<< HEAD
+=======
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+>>>>>>> lesson2
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -65,6 +69,10 @@
                         <state key="normal" title="Button" image="bubble.left" catalog="system"/>
                     </button>
                 </subviews>
+<<<<<<< HEAD
+=======
+                <color key="backgroundColor" systemColor="systemGray6Color"/>
+>>>>>>> lesson2
                 <constraints>
                     <constraint firstItem="9dC-kl-AS0" firstAttribute="leading" secondItem="Z9o-uI-EBO" secondAttribute="trailing" constant="6" id="7LX-gH-rU6"/>
                     <constraint firstAttribute="trailing" secondItem="eKh-P7-Qql" secondAttribute="trailing" constant="4" id="Ad8-g5-Yrb"/>
@@ -99,5 +107,11 @@
         <image name="arrowshape.turn.up.right" catalog="system" width="128" height="106"/>
         <image name="bubble.left" catalog="system" width="128" height="110"/>
         <image name="suit.heart" catalog="system" width="128" height="109"/>
+<<<<<<< HEAD
+=======
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+>>>>>>> lesson2
     </resources>
 </document>

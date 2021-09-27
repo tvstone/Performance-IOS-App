@@ -97,8 +97,15 @@ final class NetworkNews {
                                 for i in 0 ..< self.groupForNews.count {
                                     if self.groupForNews[i].idGroup == idGroup {
                                         let nameGroup = self.groupForNews[i].titleGroup
+<<<<<<< HEAD
                                         self.saveMyNewsToRealm(idGroup: idGroup,
                                                                nameGroup : nameGroup,
+=======
+                                        let avaGroup = self.groupForNews[i].avaGroup
+                                        self.saveMyNewsToRealm(idGroup: idGroup,
+                                                               nameGroup : nameGroup,
+                                                               avaGroup : avaGroup ,
+>>>>>>> lesson2
                                                                textNews: self.text, imageNews: self.url,
                                                                dateNews: dateNews, likeNewsCount: likesNews,
                                                                commentsNewsCount: comments, repostNewsCount: repost)
@@ -111,14 +118,25 @@ final class NetworkNews {
             }
     }
 
+<<<<<<< HEAD
     func saveMyNewsToRealm (idGroup : String, nameGroup : String, textNews : String, imageNews : String,
                             dateNews : String, likeNewsCount : String,
+=======
+    func saveMyNewsToRealm (idGroup : String, nameGroup : String, avaGroup : String, textNews : String,
+                            imageNews : String, dateNews : String, likeNewsCount : String,
+>>>>>>> lesson2
                             commentsNewsCount : String, repostNewsCount : String){
 
         do {
             let realm = try Realm(configuration: Realm.Configuration(deleteRealmIfMigrationNeeded: true))
             realm.beginWrite()
+<<<<<<< HEAD
             let loadNewsRealm = RealmNews(idGroup: idGroup,nameGroup : nameGroup, textNews: textNews, imageNews: imageNews, dateNews: dateNews,
+=======
+            let loadNewsRealm = RealmNews(idGroup: idGroup, nameGroup : nameGroup,
+                                          avaGroup : avaGroup, textNews: textNews,
+                                          imageNews: imageNews, dateNews: dateNews,
+>>>>>>> lesson2
                                           likeNewsCount: likeNewsCount, commentsNewsCount: commentsNewsCount,
                                           repostNewsCount: repostNewsCount)
             

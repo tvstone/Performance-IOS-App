@@ -77,7 +77,11 @@
         <scene sceneID="u7m-mc-Ros">
             <objects>
                 <tableViewController id="0S5-0C-WsQ" customClass="MyGroupController" customModule="MyVKclient" customModuleProvider="target" sceneMemberID="viewController">
+<<<<<<< HEAD
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="rf9-nj-EP4">
+=======
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="scrollableAxes" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="rf9-nj-EP4">
+>>>>>>> lesson2
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.82414071570000003" green="0.96620899439999997" blue="0.94957906120000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -353,10 +357,18 @@
         <scene sceneID="E9t-ek-oyS">
             <objects>
                 <viewController title="Новости" id="MFs-Kg-zVL" customClass="NewsViewController" customModule="MyVKclient" customModuleProvider="target" sceneMemberID="viewController">
+<<<<<<< HEAD
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="QIf-Od-n7X">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+=======
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="never" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="QIf-Od-n7X">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <inset key="scrollIndicatorInsets" minX="0.0" minY="6" maxX="0.0" maxY="0.0"/>
+>>>>>>> lesson2
                     </tableView>
                     <navigationItem key="navigationItem" title="Новости" id="6Fx-zw-9OS"/>
                     <connections>

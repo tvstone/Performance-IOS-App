@@ -7,6 +7,10 @@
 
 import UIKit
 import RealmSwift
+<<<<<<< HEAD
+=======
+import Kingfisher
+>>>>>>> lesson2
 
 final class NewsViewController: UIViewController {    
     
@@ -16,6 +20,10 @@ final class NewsViewController: UIViewController {
     private let textNewsCell = "textNewsCell"
     private let imageNewsCell = "imageNewsCell"
     private let infoNewsCell = "infoNewsCell"
+<<<<<<< HEAD
+=======
+    private let titleNewsCell = "titleNewsCell"
+>>>>>>> lesson2
     private let networkNews = NetworkNews()
     private var newsModel = NewsModel()
     private var newsChangedToken : NotificationToken?
@@ -28,6 +36,11 @@ final class NewsViewController: UIViewController {
                                forCellReuseIdentifier: imageNewsCell)
         newsTableView.register(UINib(nibName: "InfoNewsCell", bundle: nil),
                                forCellReuseIdentifier: infoNewsCell)
+<<<<<<< HEAD
+=======
+        newsTableView.register(UINib(nibName: "TitleNewsCell", bundle: nil),
+                               forCellReuseIdentifier: titleNewsCell)
+>>>>>>> lesson2
         self.newsTableView.dataSource = self
         self.newsTableView.delegate = self
         newsTableView.reloadData()
@@ -38,7 +51,11 @@ final class NewsViewController: UIViewController {
             newsChangedToken = news.observe { chenge  in
                 switch chenge{
                 case .initial(let initial):
+<<<<<<< HEAD
                 print(initial)
+=======
+                    print(initial)
+>>>>>>> lesson2
                 case .update(let resoults, let deletions, let insertions, let modifications):
                     print(resoults,deletions, insertions, modifications)
                 case .error( let error):
@@ -60,7 +77,13 @@ final class NewsViewController: UIViewController {
     }
 
     override func viewDidAppear(_ animated: Bool) {
+<<<<<<< HEAD
         newsTableView.reloadData()
+=======
+
+        newsTableView.reloadData()
+
+>>>>>>> lesson2
     }
 }
 
@@ -72,11 +95,16 @@ extension NewsViewController : UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+<<<<<<< HEAD
        return 3
+=======
+       return 4
+>>>>>>> lesson2
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
+<<<<<<< HEAD
             if indexPath.row == 0 {
             guard let cellText = tableView.dequeueReusableCell(withIdentifier: textNewsCell, for: indexPath)
                     as? TextNewsCell else {return UITableViewCell()}
@@ -99,5 +127,60 @@ extension NewsViewController : UITableViewDelegate, UITableViewDataSource{
 
         }
 
+=======
+        switch indexPath.row {
+
+        case 0 :
+            guard let cellTitle = tableView.dequeueReusableCell(withIdentifier: titleNewsCell, for: indexPath)
+                    as? TitleNewsCell else {return UITableViewCell()}
+            cellTitle.config(meNews: newsModel.newsArray[indexPath.section])
+            return cellTitle
+
+        case 1 :
+
+            guard let cellText = tableView.dequeueReusableCell(withIdentifier: textNewsCell, for: indexPath)
+                    as? TextNewsCell else {return UITableViewCell()}
+            cellText.config(meNews: newsModel.newsArray[indexPath.section])
+            return cellText
+
+        case 2 :
+
+            guard let cellImage = tableView.dequeueReusableCell(withIdentifier: imageNewsCell, for: indexPath)
+                    as? ImageNewsCell else {return UITableViewCell()}
+            cellImage.config(meNews: newsModel.newsArray[indexPath.section])
+
+            return cellImage
+
+        case 3 :
+
+            guard let cellInfo = tableView.dequeueReusableCell(withIdentifier: infoNewsCell, for: indexPath)
+                    as? InfoNewsCell else {return UITableViewCell()}
+            cellInfo.config(meNews: newsModel.newsArray[indexPath.section])
+            return cellInfo
+
+        default:
+
+            return UITableViewCell()
+        }
+    }
+
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+
+        switch indexPath.row {
+        case 0 :
+            return 50
+        case 1 :
+            return UITableView.automaticDimension
+        case 2 :
+            return 350
+        case 3 :
+            return UITableView.automaticDimension
+        default:
+            return UITableView.automaticDimension
+        }
+
+    }
+    
+>>>>>>> lesson2
 }
 
