@@ -12,9 +12,6 @@ final class Session{
     
     var token: String = ""
     var userId: String  = ""
-<<<<<<< HEAD
-=======
-    var idFriend = [String]()
->>>>>>> lesson3
+
   
 }

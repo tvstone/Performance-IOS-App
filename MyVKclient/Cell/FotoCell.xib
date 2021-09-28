@@ -78,10 +78,7 @@
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
-<<<<<<< HEAD
-=======
             <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
->>>>>>> lesson3
             <constraints>
                 <constraint firstItem="ZTg-uK-7eu" firstAttribute="top" secondItem="jYX-w5-G3b" secondAttribute="top" id="7Zz-CD-LfQ"/>
                 <constraint firstItem="jYX-w5-G3b" firstAttribute="trailing" secondItem="ZTg-uK-7eu" secondAttribute="trailing" id="ETt-uc-Gie"/>

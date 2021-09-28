@@ -11,13 +11,10 @@ struct  Friend : Hashable {
     var avaFriend : String
     var fotos : [String]
     var like : [String]
-<<<<<<< HEAD
-=======
     var idFriend : String
 }
 
 struct FriendId {
     var friendId : String
->>>>>>> lesson3
 }
 

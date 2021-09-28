@@ -50,11 +50,7 @@ final class NetworkNews {
 
         let parametersListPhotosFriend : Parameters = [
             "owner_id" : "-\(idGroup)",
-<<<<<<< HEAD
-            "count" : "3",
-=======
             "count" : "5",
->>>>>>> lesson3
             "access_token" : token,
             "v" : "5.131"
         ]
@@ -101,21 +97,10 @@ final class NetworkNews {
                                 for i in 0 ..< self.groupForNews.count {
                                     if self.groupForNews[i].idGroup == idGroup {
                                         let nameGroup = self.groupForNews[i].titleGroup
-<<<<<<< HEAD
-<<<<<<< HEAD
-                                        self.saveMyNewsToRealm(idGroup: idGroup,
-                                                               nameGroup : nameGroup,
-=======
-=======
->>>>>>> lesson3
                                         let avaGroup = self.groupForNews[i].avaGroup
                                         self.saveMyNewsToRealm(idGroup: idGroup,
                                                                nameGroup : nameGroup,
                                                                avaGroup : avaGroup ,
-<<<<<<< HEAD
->>>>>>> lesson2
-=======
->>>>>>> lesson3
                                                                textNews: self.text, imageNews: self.url,
                                                                dateNews: dateNews, likeNewsCount: likesNews,
                                                                commentsNewsCount: comments, repostNewsCount: repost)
@@ -128,36 +113,16 @@ final class NetworkNews {
             }
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-    func saveMyNewsToRealm (idGroup : String, nameGroup : String, textNews : String, imageNews : String,
-                            dateNews : String, likeNewsCount : String,
-=======
     func saveMyNewsToRealm (idGroup : String, nameGroup : String, avaGroup : String, textNews : String,
                             imageNews : String, dateNews : String, likeNewsCount : String,
->>>>>>> lesson2
-=======
-    func saveMyNewsToRealm (idGroup : String, nameGroup : String, avaGroup : String, textNews : String,
-                            imageNews : String, dateNews : String, likeNewsCount : String,
->>>>>>> lesson3
                             commentsNewsCount : String, repostNewsCount : String){
 
         do {
             let realm = try Realm(configuration: Realm.Configuration(deleteRealmIfMigrationNeeded: true))
             realm.beginWrite()
-<<<<<<< HEAD
-<<<<<<< HEAD
-            let loadNewsRealm = RealmNews(idGroup: idGroup,nameGroup : nameGroup, textNews: textNews, imageNews: imageNews, dateNews: dateNews,
-=======
             let loadNewsRealm = RealmNews(idGroup: idGroup, nameGroup : nameGroup,
                                           avaGroup : avaGroup, textNews: textNews,
                                           imageNews: imageNews, dateNews: dateNews,
->>>>>>> lesson2
-=======
-            let loadNewsRealm = RealmNews(idGroup: idGroup, nameGroup : nameGroup,
-                                          avaGroup : avaGroup, textNews: textNews,
-                                          imageNews: imageNews, dateNews: dateNews,
->>>>>>> lesson3
                                           likeNewsCount: likeNewsCount, commentsNewsCount: commentsNewsCount,
                                           repostNewsCount: repostNewsCount)
             

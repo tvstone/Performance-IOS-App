@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Uf1-VJ-v1Y">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Uf1-VJ-v1Y">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -61,12 +62,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-<<<<<<< HEAD
-=======
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" red="0.040534038538824452" green="0.040465666549611576" blue="0.041659954896907214" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="selectedImageTintColor" systemColor="systemTealColor"/>
->>>>>>> lesson3
                     </tabBar>
                     <connections>
                         <segue destination="nF5-Lg-aze" kind="relationship" relationship="viewControllers" id="DEq-P8-g9l"/>
@@ -83,23 +81,11 @@
         <scene sceneID="u7m-mc-Ros">
             <objects>
                 <tableViewController id="0S5-0C-WsQ" customClass="MyGroupController" customModule="MyVKclient" customModuleProvider="target" sceneMemberID="viewController">
-<<<<<<< HEAD
-<<<<<<< HEAD
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="rf9-nj-EP4">
-=======
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="scrollableAxes" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="rf9-nj-EP4">
->>>>>>> lesson2
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.82414071570000003" green="0.96620899439999997" blue="0.94957906120000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <color key="tintColor" red="0.2160676034" green="0.06041329812" blue="0.96620899439999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-=======
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="scrollableAxes" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="rf9-nj-EP4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
->>>>>>> lesson3
                         <connections>
                             <outlet property="dataSource" destination="0S5-0C-WsQ" id="5Zx-ie-oZ9"/>
                             <outlet property="delegate" destination="0S5-0C-WsQ" id="VuN-ZS-60R"/>
@@ -108,11 +94,7 @@
                     <navigationItem key="navigationItem" title="Любимые группы" id="jDw-wn-1qI">
                         <barButtonItem key="backBarButtonItem" title="&lt;&lt;&lt;" id="PYL-dN-IYc"/>
                         <barButtonItem key="rightBarButtonItem" title="&lt;&lt;&lt;" image="person.3.fill" catalog="system" style="done" id="IIR-wS-WWg">
-<<<<<<< HEAD
-                            <color key="tintColor" red="0.05509173388" green="0.064956118930000001" blue="0.96620899439999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-=======
                             <color key="tintColor" systemColor="systemTealColor"/>
->>>>>>> lesson3
                             <connections>
                                 <segue destination="uQP-dT-T0N" kind="show" id="WFI-fs-LC9"/>
                             </connections>
@@ -130,13 +112,8 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="3iW-4K-vTU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-<<<<<<< HEAD
-                        <color key="backgroundColor" red="0.82414071570000003" green="0.96620899439999997" blue="0.94957906120000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <color key="tintColor" red="0.2160676034" green="0.06041329812" blue="0.96620899439999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-=======
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
->>>>>>> lesson3
                         <connections>
                             <outlet property="dataSource" destination="uQP-dT-T0N" id="FDX-cN-ACh"/>
                             <outlet property="delegate" destination="uQP-dT-T0N" id="HON-M0-3ht"/>
@@ -155,12 +132,8 @@
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" dataMode="prototypes" id="l9A-7l-XGo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-<<<<<<< HEAD
-                        <color key="backgroundColor" red="0.82414071570000003" green="0.96620899439999997" blue="0.94957906120000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-=======
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
->>>>>>> lesson3
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="2" minimumInteritemSpacing="0.0" sectionInsetReference="safeArea" id="nNt-Km-8IF">
                             <size key="itemSize" width="200" height="200"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -192,11 +165,7 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bXm-cq-PiM">
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
-<<<<<<< HEAD
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-=======
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
->>>>>>> lesson3
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="XLq-cz-jwC">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -207,13 +176,8 @@
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="QlY-Wo-w7m"/>
-<<<<<<< HEAD
-                        <color key="backgroundColor" red="0.83452059860000005" green="0.94966541230000001" blue="0.96620899439999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <color key="tintColor" red="0.82414071570000003" green="0.96620899439999997" blue="0.94957906120000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-=======
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
->>>>>>> lesson3
                         <constraints>
                             <constraint firstItem="bXm-cq-PiM" firstAttribute="leading" secondItem="QlY-Wo-w7m" secondAttribute="leading" id="CYm-L9-vZS"/>
                             <constraint firstItem="bXm-cq-PiM" firstAttribute="top" secondItem="QlY-Wo-w7m" secondAttribute="top" id="OBI-f6-7HK"/>
@@ -237,21 +201,12 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nF5-Lg-aze" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Друзья" id="cbv-uc-YH6">
                         <imageReference key="image" image="person.2.fill" catalog="system" symbolScale="large" renderingMode="template"/>
-<<<<<<< HEAD
-=======
-                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
->>>>>>> lesson3
+                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Lvh-kA-QeN">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-<<<<<<< HEAD
-                        <color key="backgroundColor" red="0.2160676034" green="0.06041329812" blue="0.96620899439999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <color key="tintColor" red="0.2160676034" green="0.06041329812" blue="0.96620899439999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
-=======
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -261,7 +216,6 @@
                         </textAttributes>
                         <textAttributes key="largeTitleTextAttributes">
                             <color key="textColor" systemColor="systemTealColor"/>
->>>>>>> lesson3
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -283,11 +237,7 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Gwx-qL-aHf">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
-<<<<<<< HEAD
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-=======
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
->>>>>>> lesson3
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="ovS-pZ-HUB">
                                     <size key="itemSize" width="128" height="128"/>
@@ -327,14 +277,6 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7BT-kQ-GsG">
                                 <rect key="frame" x="0.0" y="139" width="414" height="674"/>
-<<<<<<< HEAD
-                                <color key="backgroundColor" red="0.82414071570000003" green="0.96620899439999997" blue="0.94957906120000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </tableView>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="sFK-09-86E">
-                                <rect key="frame" x="0.0" y="88" width="414" height="51"/>
-                                <color key="backgroundColor" red="0.82414071570000003" green="0.96620899439999997" blue="0.94957906120000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <textInputTraits key="textInputTraits"/>
-=======
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -349,11 +291,10 @@
                                     <string>Title</string>
                                     <string>Title</string>
                                 </scopeButtonTitles>
->>>>>>> lesson3
                             </searchBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3Qj-vg-frd"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="sFK-09-86E" firstAttribute="leading" secondItem="3Qj-vg-frd" secondAttribute="leading" id="Cef-9R-Ugo"/>
                             <constraint firstItem="7BT-kQ-GsG" firstAttribute="trailing" secondItem="3Qj-vg-frd" secondAttribute="trailing" id="Mbi-8u-vN2"/>
@@ -383,19 +324,12 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZSw-Lz-oz5" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Группы" id="Ymo-Wf-zMk">
                         <imageReference key="image" image="person.3.fill" catalog="system" symbolScale="large" renderingMode="template"/>
+                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="KEt-K9-L8w">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-<<<<<<< HEAD
-                        <color key="backgroundColor" red="0.2160676034" green="0.06041329812" blue="0.96620899439999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <color key="tintColor" red="0.2160676034" green="0.06041329812" blue="0.96620899439999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                        </textAttributes>
-                        <textAttributes key="largeTitleTextAttributes">
-=======
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" red="0.089609807769999994" green="0.089458655770000006" blue="0.092098904640000007" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -405,7 +339,6 @@
                         </textAttributes>
                         <textAttributes key="largeTitleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
->>>>>>> lesson3
                             <color key="textShadowColor" red="0.05509173388" green="0.064956118930000001" blue="0.96620899439999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         </textAttributes>
                     </navigationBar>
@@ -422,15 +355,6 @@
         <scene sceneID="lN4-ta-iFe">
             <objects>
                 <navigationController id="0J3-2y-erR" sceneMemberID="viewController">
-<<<<<<< HEAD
-                    <tabBarItem key="tabBarItem" title="Новости" image="globe" catalog="system" id="BjN-iG-2hv"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2Zh-Dn-y7v">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.2160676034" green="0.06041329812" blue="0.96620899439999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
-=======
                     <tabBarItem key="tabBarItem" title="Новости" image="globe" catalog="system" id="BjN-iG-2hv">
                         <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
@@ -443,7 +367,6 @@
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Book" family="Bodoni 72 Oldstyle" pointSize="28"/>
                             <color key="textColor" systemColor="systemTealColor"/>
->>>>>>> lesson3
                         </textAttributes>
                     </navigationBar>
                     <connections>
@@ -458,20 +381,6 @@
         <scene sceneID="E9t-ek-oyS">
             <objects>
                 <viewController title="Новости" id="MFs-Kg-zVL" customClass="NewsViewController" customModule="MyVKclient" customModuleProvider="target" sceneMemberID="viewController">
-<<<<<<< HEAD
-<<<<<<< HEAD
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="QIf-Od-n7X">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-=======
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="never" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="QIf-Od-n7X">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <inset key="scrollIndicatorInsets" minX="0.0" minY="6" maxX="0.0" maxY="0.0"/>
->>>>>>> lesson2
-=======
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="never" dataMode="prototypes" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="QIf-Od-n7X">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -482,7 +391,6 @@
                         <color key="sectionIndexColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="sectionIndexBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
->>>>>>> lesson3
                     </tableView>
                     <navigationItem key="navigationItem" title="Новости" id="6Fx-zw-9OS"/>
                     <connections>
@@ -494,11 +402,7 @@
             <point key="canvasLocation" x="-3529" y="-439"/>
         </scene>
     </scenes>
-<<<<<<< HEAD
-    <color key="tintColor" systemColor="systemGreenColor"/>
-=======
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
->>>>>>> lesson3
     <resources>
         <image name="globe" catalog="system" width="128" height="121"/>
         <image name="person.2.fill" catalog="system" width="128" height="80"/>
@@ -507,13 +411,8 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-<<<<<<< HEAD
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-=======
         <systemColor name="systemTealColor">
-            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
->>>>>>> lesson3
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -18,13 +18,6 @@ final class NetworkGroup {
     private let id = Session.shared.userId
     private let pathForGroup = "method/groups.get"
 
-<<<<<<< HEAD
-    private var fotos = [String]()
-
-    private var groupsAll = [String]()
-
-=======
->>>>>>> lesson3
     func pingMyGroups(){
 
         let parametersListGroups: Parameters = [
@@ -45,10 +38,6 @@ final class NetworkGroup {
                         let items = clearJson["response"]["items"].arrayValue
                         let countItems = clearJson["response"]["count"].intValue
 
-<<<<<<< HEAD
-
-=======
->>>>>>> lesson3
                         for i in 0 ..< countItems {
                             let id = items[i]["id"].stringValue
                             let myGroupName = items[i]["name"].stringValue
@@ -64,15 +53,8 @@ final class NetworkGroup {
         do {
             let realm = try Realm(configuration: Realm.Configuration(deleteRealmIfMigrationNeeded: true))
             realm.beginWrite()
-<<<<<<< HEAD
-
             let loadGroupsInRealm = RealmGroup(idGroup: id, titleGroup: name, avaGroup: ava)
             realm.add(loadGroupsInRealm, update: .modified)
-   //         realm.refresh()
-=======
-            let loadGroupsInRealm = RealmGroup(idGroup: id, titleGroup: name, avaGroup: ava)
-            realm.add(loadGroupsInRealm, update: .modified)
->>>>>>> lesson3
             try realm.commitWrite()
         } catch {
             print(error)

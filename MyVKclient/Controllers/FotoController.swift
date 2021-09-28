@@ -16,24 +16,15 @@ final class FotoController: UICollectionViewController {
     private let FullSizeViewControllerID = "FullSizeViewControllerID"
     private let countCells = 3
     private let offSetCell = 2
-<<<<<<< HEAD
-=======
 
->>>>>>> lesson3
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.collectionView.register(UINib(nibName: "FotoCell", bundle: nil), forCellWithReuseIdentifier: reuseIdentifier)
-<<<<<<< HEAD
-    }
-
-
-=======
         self.collectionView.reloadData()
 
     
     }
->>>>>>> lesson3
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
@@ -49,18 +40,12 @@ final class FotoController: UICollectionViewController {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier,
                                                             for: indexPath) as? FotoCell
         else { return UICollectionViewCell()}
-<<<<<<< HEAD
-        cell.fotoImageView.kf.setImage(with: URL(string: fotoArray[indexPath.item] ))
-        cell.likeCounter.text = likeFoto[indexPath.item]
-        return cell
-=======
 
         cell.fotoImageView.kf.setImage(with: URL(string: self.fotoArray[indexPath.item]))
         cell.likeCounter.text = self.likeFoto[indexPath.item]
 
         return cell
 
->>>>>>> lesson3
     }
 
 

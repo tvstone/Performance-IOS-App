@@ -13,11 +13,6 @@ final class RealmFriend: Object  {
     @objc dynamic var idFriend = String()
     @objc dynamic var friendName = String() 
     @objc dynamic var avatar = String()
-<<<<<<< HEAD
-  //  let fotos = List<RealmFotos>()
-
-=======
->>>>>>> lesson3
 
     convenience init(friendName : String, avatar : String, idFriend : String) { 
         self.init()
