@@ -20,12 +20,21 @@
         }
       },
       {
+        "package": "PromiseKit",
+        "repositoryURL": "https://github.com/mxcl/PromiseKit.git",
+        "state": {
+          "branch": "v6",
+          "revision": "2ff97931d2721ecae9f94d8cbf4cf853a7d79180",
+          "version": null
+        }
+      },
+      {
         "package": "Realm",
         "repositoryURL": "https://github.com/realm/realm-cocoa.git",
         "state": {
-          "branch": null,
-          "revision": "4cbe20f31b1bcc20190c724632143b4f9b8ac3e3",
-          "version": "10.15.1"
+          "branch": "master",
+          "revision": "d03380762a20f3759d597bc0399e76d960ab980e",
+          "version": null
         }
       },
       {
